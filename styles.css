@@ -1,0 +1,53 @@
+.nav-link {
+  color: #6b7681;
+}
+.nav-link:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.social-media:hover {
+  color: white;
+}
+
+.ssocial-media:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.navbar-toggler {
+  @media (max-width: 991px) {
+  .navbar-toggler {
+    order: 0;
+    margin-right: auto;
+  }
+}
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 56px; /* adjust if your navbar is taller */
+    left: -75%; /* hide to the left */
+    width: 75%;
+    height: 100%;
+    background-color: black; /* match your navbar */
+    padding: 1rem;
+    transition: left 0.3s ease-in-out;
+    z-index: 1050;
+  }
+
+  .navbar-collapse.show {
+    left: 0; /* slide in */
+  }
+
+  .navbar-toggler {
+    z-index: 1060;
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
